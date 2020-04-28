@@ -1,0 +1,93 @@
+.App {
+    background-color: #F0F0F7;
+    width: 1100px;
+    min-width: 800px;
+    margin: auto;
+    font-family: Montserrat, archivo narrow, Helvetica;
+}
+
+.header-box {
+    background-color: #2C92D8;
+    height: 300px;
+}
+
+.search-bar {
+    width: 50%;
+    margin: auto;
+    padding-top: 180px;
+}
+
+.search-bar input {
+    height: 30px;
+    width: 100%;
+    border-radius: 25px;
+    border: none;
+    padding: 10px;
+    font-family: Montserrat, archivo narrow, Helvetica;
+}
+
+.search-icon {
+    height: 35px;
+    width: 35px;
+    background-color: #F8BC07;
+    border-radius: 25px;
+    color: white;
+    text-align: center;
+    float: right;
+    position: relative;
+    bottom: 42px;
+    margin-right: -10px;
+    display: table;
+}
+
+.search-icon i {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.profile-row-box {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    height: 50px;
+    width: 90%;
+    margin: 15px auto;
+    background-color: white;
+    border-left: 5px #2C92D8 solid;
+
+    -webkit-box-shadow: 8px 6px 20px -11px rgba(0, 0, 0, 0.63);
+    -moz-box-shadow: 8px 6px 20px -11px rgba(0, 0, 0, 0.63);
+    box-shadow: 8px 6px 20px -11px rgba(0, 0, 0, 0.63);
+}
+
+.avatar-icon {
+    margin-left: 20px;
+    height: 20px;
+}
+
+.vertical-divider {
+    height: 20px;
+    border-left: 2px solid lightgray;
+    margin: 0px 30px;
+}
+
+.main-profile-details {
+    font-weight: bold;
+}
+
+.secondary-profile-details {
+    font-size: 0.9em;
+    color: gray;
+}
+
+.copy-button {
+
+    margin: 0px 30px;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #F8BC07;
+    color: white;
+}
