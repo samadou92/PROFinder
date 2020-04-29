@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import data from './data/profilesData.json';
+import maleicon from './res/icons/male-icon.png';
+import femaleicon from './res/icons/female-icon.png';
 
 class App extends React.Component {
   
@@ -55,15 +57,16 @@ function SearchBar(props) {
 function ProfilesRowsBoard(props) {
   const profiles = props.profiles;
   const filteredProfiles = profiles.map((profileObj) => {
-    return <ProfileRow profile={profileObj} />
+    return <ProfileRow key={profileObj.fullname.toString()} profile={profileObj} />
   });
   return filteredProfiles;
 }
 
 function ProfileRow(props) {
+  const icon = (props.profile.gender === 'M') ? maleicon : femaleicon;
   return (
     <div className="profile-row-box">
-      <img alt="avatar icon" className="avatar-icon" src="/male-icon.png"/>
+      <img alt="avatar icon" className="avatar-icon" src={icon}/>
       <div className="vertical-divider"></div>
       <p className="main-profile-details">{props.profile.fullname}</p>
       <div className="vertical-divider"></div>
