@@ -19,7 +19,7 @@ class App extends React.Component {
     this.setState({
       inputValue: event.target.value,
       profilesDetails: data.filter((profileObj) => {
-        return profileObj.fullname.includes(event.target.value);
+        return profileObj.fullname.toLowerCase().includes(event.target.value.toLowerCase());
       })
     });
   }
