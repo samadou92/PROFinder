@@ -3,6 +3,7 @@ import './App.css';
 import data from './data/profilesData.json';
 import maleicon from './res/icons/male-icon.png';
 import femaleicon from './res/icons/female-icon.png';
+import logo from './res/images/logo.png';
 
 class App extends React.Component {
   
@@ -38,6 +39,7 @@ class App extends React.Component {
 function HeaderBox(props) {
   return (
     <div className="header-box">
+      <img className="logo" src={logo} />
       <SearchBar data={props.data} />
     </div>
   )

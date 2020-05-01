@@ -11,13 +11,20 @@
 
 .header-box {
     background-color: #2C92D8;
-    height: 300px;
+    height: 350px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.logo {
+    width: 400px;
+    margin-top: 50px;
 }
 
 .search-bar {
     width: 45%;
     margin: auto;
-    padding-top: 180px;
+    padding-top: 50px;
 }
 
 .search-bar input {
