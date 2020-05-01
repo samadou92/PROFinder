@@ -39,7 +39,7 @@ class App extends React.Component {
 function HeaderBox(props) {
   return (
     <div className="header-box">
-      <img className="logo" src={logo} />
+      <img className="logo" src={logo} alt="logo" />
       <SearchBar data={props.data} />
     </div>
   )
