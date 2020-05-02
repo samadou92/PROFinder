@@ -1,6 +1,6 @@
 {
   "homepage": "https://noisy96.github.io/PROFinder",
-  "name": "mailer",
+  "name": "profinder",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
