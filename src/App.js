@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import copy from 'copy-to-clipboard';
 import data from './data/profilesData.json';
 import maleicon from './res/icons/male-icon.png';
 import femaleicon from './res/icons/female-icon.png';
@@ -64,22 +65,35 @@ function ProfilesRowsBoard(props) {
   return filteredProfiles;
 }
 
-function ProfileRow(props) {
-  const icon = (props.profile.gender === 'M') ? maleicon : femaleicon;
-  return (
-    <div className="profile-row-box">
-      <img alt="avatar icon" className="avatar-icon" src={icon}/>
-      <div className="vertical-divider"></div>
-      <p className="main-profile-details">{props.profile.fullname}</p>
-      <div className="vertical-divider"></div>
-      <p className="secondary-profile-details">{props.profile.degree}</p>
-      <div className="vertical-divider"></div>
-      <p className="secondary-profile-details">{props.profile.grade}</p>
-      <div className="vertical-divider"></div>
-      <p className="main-profile-details">{props.profile.email}</p>
-      <button className="copy-button">Copy email</button>
-    </div>
-  )
+class ProfileRow extends React.Component {
+
+  icon = (this.props.profile.gender === 'M') ? maleicon : femaleicon;
+  
+  constructor(props) {
+    super(props);
+    this.copyToClipboard = this.copyToClipboard.bind(this);
+  };
+
+  copyToClipboard() {
+    copy(this.props.profile.email);
+  };
+
+  render () {
+    return (
+      <div className="profile-row-box">
+        <img alt="avatar icon" className="avatar-icon" src={this.icon}/>
+        <div className="vertical-divider"></div>
+        <p className="main-profile-details">{this.props.profile.fullname}</p>
+        <div className="vertical-divider"></div>
+        <p className="secondary-profile-details">{this.props.profile.degree}</p>
+        <div className="vertical-divider"></div>
+        <p className="secondary-profile-details">{this.props.profile.grade}</p>
+        <div className="vertical-divider"></div>
+        <p className="main-profile-details">{this.props.profile.email}</p>
+        <button className="copy-button" onClick={this.copyToClipboard}>Copy email</button>
+      </div>
+    )
+  }
 }
 
 export default App;
