@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 .App {
     background-color: #F0F0F7;
@@ -56,17 +56,14 @@
 }
 
 .profile-row-box {
-    
     display: grid;
-    grid-template-columns: 40px 40px 180px 50px 100px 50px 50px 40px 250px 190px;
+    grid-template-columns: 40px 40px 180px 50px 100px 50px 50px 40px 0px 250px 190px;
     grid-template-rows: 30px;
-
     height: 50px;
     width: 90%;
     margin: 15px auto;
     background-color: white;
     border-left: 5px #2C92D8 solid;
-
     -webkit-box-shadow: 8px 6px 20px -11px rgba(0, 0, 0, 0.63);
     -moz-box-shadow: 8px 6px 20px -11px rgba(0, 0, 0, 0.63);
     box-shadow: 8px 6px 20px -11px rgba(0, 0, 0, 0.63);
@@ -89,7 +86,7 @@
 
 .main-profile-details {
     font-size: 0.9em;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .secondary-profile-details {
@@ -106,4 +103,34 @@
     color: white;
     font-family: Montserrat, archivo narrow, Helvetica;
     margin: 10px auto;
+}
+
+.popup-message {
+    position: relative;
+    bottom: 40px;
+    margin: 0 50px;
+    opacity: 0.9;
+}
+
+.popup-rectangle {
+    width: 120px;
+    height: 30px;
+    background-color: gray;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.popup-rectangle p {
+    color: white;
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    margin: 0 45px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid gray;
 }

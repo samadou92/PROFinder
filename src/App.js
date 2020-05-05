@@ -65,17 +65,39 @@ function ProfilesRowsBoard(props) {
   return filteredProfiles;
 }
 
+function PopupMessage() {
+  return (
+    <div className="popup-message">
+      <div className="popup-rectangle">
+        <p>Copied!</p>
+      </div>
+      <div className="arrow-down"></div>
+    </div>
+    );
+}
+
 class ProfileRow extends React.Component {
 
   icon = (this.props.profile.gender === 'M') ? maleicon : femaleicon;
   
   constructor(props) {
     super(props);
+    this.state = {
+      copied: false
+    };
     this.copyToClipboard = this.copyToClipboard.bind(this);
   };
 
   copyToClipboard() {
     copy(this.props.profile.email);
+    this.setState({
+      copied: true
+    });
+    this.myInterval = setInterval(() => {
+      this.setState({
+        copied: false
+      });
+    }, 3000);
   };
 
   render () {
@@ -89,6 +111,7 @@ class ProfileRow extends React.Component {
         <div className="vertical-divider"></div>
         <p className="secondary-profile-details">{this.props.profile.grade}</p>
         <div className="vertical-divider"></div>
+        {this.state.copied ? <PopupMessage /> : <div></div>}
         <p className="main-profile-details">{this.props.profile.email}</p>
         <button className="copy-button" onClick={this.copyToClipboard}>Copy email</button>
       </div>
