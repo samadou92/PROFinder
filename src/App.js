@@ -7,14 +7,30 @@ import femaleicon from './res/icons/female-icon.png';
 import logo from './res/images/logo.png';
 
 class App extends React.Component {
-  
+
   constructor(props) {
     super(props);
+    this.sortData(data);
     this.state = {
       inputValue: '',
       profilesDetails: data
     };
     this.handleChange = this.handleChange.bind(this);
+    this.sortData = this.sortData.bind(this);
+  }
+
+  sortData(data) {
+    data.sort(function(a,b) {
+      var nameA = a.fullname.toUpperCase();
+      var nameB = b.fullname.toUpperCase(); 
+      if (nameA < nameB) {
+        return -1;
+      }
+      if (nameA > nameB) {
+        return 1;
+      }
+      return 0;
+    });
   }
 
   handleChange(event) {
@@ -60,7 +76,8 @@ function SearchBar(props) {
 function ProfilesRowsBoard(props) {
   const profiles = props.profiles;
   const filteredProfiles = profiles.map((profileObj) => {
-    return <ProfileRow key={profileObj.fullname.toString()} profile={profileObj} />
+    /* TODO : change key back to 'fullname' once the component supports emails array */
+    return <ProfileRow key={profileObj.email.toString()} profile={profileObj} />
   });
   return filteredProfiles;
 }
