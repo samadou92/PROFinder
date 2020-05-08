@@ -103,6 +103,11 @@
     color: white;
     font-family: Montserrat, archivo narrow, Helvetica;
     margin: 10px auto;
+    cursor: pointer;
+}
+
+.copy-button:hover {
+    background-color: rgb(206, 156, 7);
 }
 
 .popup-message {
@@ -133,4 +138,18 @@
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-top: 10px solid gray;
+}
+
+.footer-box {
+    text-align: center;
+}
+
+.footer-box img {
+    height: 80px;
+    margin: 30px auto;
+    opacity: 60%;
+}
+
+.footer-box img:hover {
+    opacity: 1;
 }

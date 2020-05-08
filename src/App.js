@@ -5,6 +5,7 @@ import data from './data/profilesData.json';
 import maleicon from './res/icons/male-icon.png';
 import femaleicon from './res/icons/female-icon.png';
 import logo from './res/images/logo.png';
+import sourceCodeIcon from './res/icons/code-source-icon.png';
 
 class App extends React.Component {
 
@@ -47,6 +48,7 @@ class App extends React.Component {
       <div className="App">
         <HeaderBox data={{value: this.state.inputValue, function: this.handleChange}} />
         <ProfilesRowsBoard profiles={this.state.profilesDetails} />
+        <FooterBox />
       </div>
     );
   }
@@ -135,5 +137,15 @@ class ProfileRow extends React.Component {
     )
   }
 }
+
+function FooterBox() {
+  return (
+    <div className="footer-box">
+      <a href="https://github.com/Noisy96/PROFinder" target="blank">
+        <img src={sourceCodeIcon} alt="Source code link" />
+      </a>
+    </div>
+  );
+};
 
 export default App;
