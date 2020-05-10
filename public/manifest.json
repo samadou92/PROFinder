@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "PROFinder App",
+  "name": "A reactive directory of USTO's Computer Science teacher emails",
   "icons": [
     {
       "src": "favicon.ico",
