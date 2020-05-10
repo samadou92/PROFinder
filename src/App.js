@@ -2,8 +2,8 @@ import React from 'react';
 import './App.css';
 import copy from 'copy-to-clipboard';
 import data from './data/profilesData.json';
-import maleicon from './res/icons/male-icon.png';
-import femaleicon from './res/icons/female-icon.png';
+import maleIcon from './res/icons/male-icon.png';
+import femaleIcon from './res/icons/female-icon.png';
 import logo from './res/images/logo.png';
 import sourceCodeIcon from './res/icons/code-source-icon.png';
 
@@ -97,7 +97,7 @@ function PopupMessage() {
 
 class ProfileRow extends React.Component {
 
-  icon = (this.props.profile.gender === 'M') ? maleicon : femaleicon;
+  icon = (this.props.profile.gender === 'M') ? maleIcon : femaleIcon;
   
   constructor(props) {
     super(props);
@@ -141,7 +141,7 @@ class ProfileRow extends React.Component {
 function FooterBox() {
   return (
     <div className="footer-box">
-      <a href="https://github.com/Noisy96/PROFinder" target="blank">
+      <a href="https://github.com/Noisy96/PROFinder" target="_blank" rel="noopener noreferrer">
         <img src={sourceCodeIcon} alt="Source code link" />
       </a>
     </div>
