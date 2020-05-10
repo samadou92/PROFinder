@@ -147,9 +147,9 @@
 .footer-box img {
     height: 80px;
     margin: 30px auto;
-    opacity: 60%;
+    opacity: 0.6;
 }
 
 .footer-box img:hover {
-    opacity: 100%;
+    opacity: 1;
 }
