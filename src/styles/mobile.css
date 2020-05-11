@@ -1,0 +1,88 @@
+@media only screen and (max-width: 600px) {
+
+    .App {
+        width: 100%;
+    }
+
+    .header-box {
+        height: 250px;
+    }
+
+    .logo {
+        width: 70%;
+        margin: 40px 0px;
+    }
+
+    .search-bar {
+        width: 75%;
+    }
+
+    .vertical-divider {
+        visibility: hidden;
+    }
+
+    .profile-row-box {
+        grid-template-columns: 15% 0% 30% 25% 0% 30% 0%;
+        grid-template-rows: 40px 20px 40px;
+        height: 100px;
+    }
+
+    .avatar-icon {
+        margin: 15px;
+    }
+
+    .main-profile-details {
+        font-size: 0.8em;
+        align-self: center;
+    }
+
+    .secondary-profile-details {
+        font-size: 0.7em;
+        align-self: center;
+    }
+
+    #profile-fullname {
+        margin: 0px;
+        grid-column-start: 2;
+        grid-column-end: two;
+        grid-row-start: 1;
+    }
+
+    #profile-degree {
+        margin: 0px;
+        grid-column-start: 2;
+        grid-column-end: one;
+        grid-row-start: 2;
+    }
+
+    #profile-grade {
+        margin: 0px;
+        grid-column-start: 4;
+        grid-column-end: one;
+        grid-row-start: 2;
+    }
+
+    #profile-email {
+        margin: 0px;
+
+        grid-column-start: 2;
+        grid-column-end: one;
+        grid-row-start: 1;
+        grid-row-end: one;
+    }
+
+    .copy-button {
+        font-size: 0.6em;
+        width: 70%;
+        
+        margin: 0px;
+        grid-column-start: 6;
+        grid-column-end: one;
+        grid-row-start: 2;
+        justify-self: center;
+    }
+
+    .footer-box img {
+        width: 15%;
+    }
+}

@@ -1,5 +1,6 @@
 import React from 'react';
-import './App.css';
+import './styles/desktop.css';
+import './styles/mobile.css';
 import copy from 'copy-to-clipboard';
 import data from './data/profilesData.json';
 import maleIcon from './res/icons/male-icon.png';
@@ -124,14 +125,14 @@ class ProfileRow extends React.Component {
       <div className="profile-row-box">
         <img alt="avatar icon" className="avatar-icon" src={this.icon}/>
         <div className="vertical-divider"></div>
-        <p className="main-profile-details">{this.props.profile.fullname}</p>
+        <p className="main-profile-details" id="profile-fullname">{this.props.profile.fullname}</p>
         <div className="vertical-divider"></div>
-        <p className="secondary-profile-details">{this.props.profile.degree}</p>
+        <p className="secondary-profile-details" id="profile-degree">{this.props.profile.degree}</p>
         <div className="vertical-divider"></div>
-        <p className="secondary-profile-details">{this.props.profile.grade}</p>
+        <p className="secondary-profile-details" id="profile-grade">{this.props.profile.grade}</p>
         <div className="vertical-divider"></div>
         {this.state.copied ? <PopupMessage /> : <div></div>}
-        <p className="main-profile-details">{this.props.profile.email}</p>
+        <p className="main-profile-details" id="profile-email">{this.props.profile.email}</p>
         <button className="copy-button" onClick={this.copyToClipboard}>Copy email</button>
       </div>
     )
