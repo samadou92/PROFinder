@@ -1,7 +1,7 @@
 # PROFinder App
 ## The problem! :confused:
 My fellow students often asks for a certain professor's email address in group, and this has been going on for the entire 3 years I've spent there, and I wanted to try JavaScript's frontend framework __React JS__
-<img src="" width="25"> so bad! Soo...
+<img src="https://github.com/Noisy96/PROFinder/blob/master/images/react-logo.png" width="25"> so bad! Soo...
 
 ## Description
 An interactive mail directory web app... basically an enhanced document coupled (Ctrl + F) exprience. Cool hein??? :sunglasses:
@@ -11,7 +11,7 @@ An interactive mail directory web app... basically an enhanced document coupled 
 
 ## Version ![Version](https://img.shields.io/github/package-json/v/noisy96/PROFinder)
 
-## Build Status 
+## Build Status <img src="https://github.com/Noisy96/PROFinder/blob/master/images/travis-ci.png" width="25">
 ![Travis Build Status](https://travis-ci.com/Noisy96/PROFinder.svg?branch=master)
 
 ## Contribution
