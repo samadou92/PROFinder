@@ -65,5 +65,10 @@
     {"fullname": "Selka Seddika", "degree": "Doctorat (CS)", "grade": "MCB", "email":"selka_sadika@yahoo.com" ,"gender":"F"},
     {"fullname": "Yedjour Denia ", "degree": "Magister (CS)", "grade": "MAA", "email":"dyedjour@yahoo.fr" ,"gender":"F"},
     {"fullname": "Yedjour Hayet", "degree": "Magister (CS)", "grade": "MAB", "email":"hyedjour@yahoo.fr" ,"gender":"F"},
-    {"fullname": "Zerkouk Slimane", "degree": "Doctorat(Math)", "grade": "MCB", "email":"slimane.zerkouk@gmail.com" ,"gender":"M"}
+    {"fullname": "Zerkouk Slimane", "degree": "Doctorat(Math)", "grade": "MCB", "email":"slimane.zerkouk@gmail.com" ,"gender":"M"},
+    {"fullname": "Baghdadi Leila", "degree": "Magister (CS)", "grade": "MAB", "email":"le.bagdadi@gmail.com" ,"gender":"F"},
+    {"fullname": "Bouziane Hafida", "degree": "Doctorat (CS)", "grade": "MCB", "email":"hafida_chouarfia@yah­oo.fr" ,"gender":"F"},
+    {"fullname": "Zerkouk Meriem", "degree": "Doctorat (CS)", "grade": "MCB", "email":"zekouk.meriem@gmail.com" ,"gender":"F"},
+    {"fullname": "Benallal Anis Mohamed", "degree": "Doctorat (CS)", "grade": "MCB", "email":"benallal.info@gmail.com" ,"gender":"M"},
+    {"fullname": "Khelil Rachida", "degree": "Magister (FR)", "grade": "MCB", "email":"rachidakh1@yahoo.fr" ,"gender":"F"}
 ]

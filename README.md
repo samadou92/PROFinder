@@ -16,6 +16,9 @@ I finally got myself to define a scope for the v1 and not go way beyond it (whic
 
 ## Build Status <img src="https://github.com/Noisy96/PROFinder/blob/master/images/travis-ci.png" width="25"> ![Travis Build Status](https://travis-ci.com/Noisy96/PROFinder.svg?branch=master)
 
+## Future Enhancements
+* Animation for god's sake!
+
 ## Contribution
 I'd appreciate additions and corrections to the professors details and emails in two forms:
 * Good old Fork, Edit [file](https://github.com/Noisy96/PROFinder/blob/master/src/data/profilesData.json), Commit, Pull Request
