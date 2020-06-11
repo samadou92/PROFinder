@@ -1,6 +1,8 @@
 import React from 'react';
+
 import './styles/desktop.css';
 import './styles/mobile.css';
+
 import copy from 'copy-to-clipboard';
 import data from './data/profilesData.json';
 import maleIcon from './res/icons/male-icon.png';
@@ -21,6 +23,7 @@ class App extends React.Component {
     this.sortData = this.sortData.bind(this);
   }
 
+  // called at the first data loading to display data in an ordered way
   sortData(data) {
     data.sort(function(a,b) {
       var nameA = a.fullname.toUpperCase();
@@ -35,6 +38,7 @@ class App extends React.Component {
     });
   }
 
+  // called everytime the search input element value is changed
   handleChange(event) {
     this.setState({
       inputValue: event.target.value,
@@ -108,6 +112,7 @@ class ProfileRow extends React.Component {
     this.copyToClipboard = this.copyToClipboard.bind(this);
   };
 
+  // copies the email to the user's clipboard & displays a feedback bubble
   copyToClipboard() {
     copy(this.props.profile.email);
     this.setState({
