@@ -1,8 +1,9 @@
 {
   "homepage": "https://noisy96.github.io/PROFinder",
   "name": "profinder",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "license": "GPLv3",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
