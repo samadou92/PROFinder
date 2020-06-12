@@ -134,7 +134,10 @@ class ProfileRow extends React.Component {
 
     // Might look complexe but this just increases/decreases index value without allowing it
     // become greater than the actual number of emails available nor get bellow 0
-    let newIndex = orientation === "down" ? (index - 1) < 0 ? 0 : (index - 1) : (index + 1) % length;
+    // TODO : Refactor : this can be done more elegantly...probably
+    let newIndex = orientation === "down" ? (index - 1) < 0 ? length - 1 : (index - 1) : (index + 1) % length;
+
+    console.log(newIndex);
 
     this.setState({
       copied: false,
@@ -142,6 +145,8 @@ class ProfileRow extends React.Component {
     });
   };
 
+
+  // TODO : This probably needs a proper refactoring
   render () {
     return (
       <div className="profile-row-box">
@@ -159,8 +164,8 @@ class ProfileRow extends React.Component {
         { this.props.profile.emails.length>1
         ?
         <div className="switch-button-box">
-        <button className="switch-button fa fa-caret-up" onClick={() => this.switchMail("up")}></button>
-        <button className="switch-button fa fa-caret-down" onClick={() => this.switchMail("down")}></button>
+        <button className="switch-button fa fa-caret-left" onClick={() => this.switchMail("up")}></button>
+        <button className="switch-button fa fa-caret-right" onClick={() => this.switchMail("down")}></button>
         </div>
         :
         <div></div>
