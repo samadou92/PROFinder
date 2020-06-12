@@ -55,7 +55,7 @@
 
 .profile-row-box {
     display: grid;
-    grid-template-columns: 40px 40px 180px 50px 100px 50px 50px 40px 0px 280px 160px;
+    grid-template-columns: 40px 40px 180px 50px 100px 50px 40px 40px 0px 280px 60px 100px;
     grid-template-rows: 30px;
     height: 50px;
     width: 90%;
@@ -92,9 +92,24 @@
     color: gray;
 }
 
+.switch-button-box {
+    margin-top: -5px;
+}
+
+.switch-button {
+    height: 30px;
+    width: 28px;
+    border-radius: 5px;
+    background-color: lightgray;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 2px;
+}
+
 .copy-button {
-    width: 120px;
-    height: 28px;
+    width: 100px;
+    height: 30px;
     border: none;
     border-radius: 5px;
     background-color: #F8BC07;

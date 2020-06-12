@@ -83,8 +83,7 @@ function SearchBar(props) {
 function ProfilesRowsBoard(props) {
   const profiles = props.profiles;
   const filteredProfiles = profiles.map((profileObj) => {
-    /* TODO : change key back to 'fullname' once the component supports emails array */
-    return <ProfileRow key={profileObj.email.toString()} profile={profileObj} />
+    return <ProfileRow key={profileObj.fullname.toString()} profile={profileObj} />
   });
   return filteredProfiles;
 }
@@ -107,22 +106,40 @@ class ProfileRow extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      copied: false
+      copied: false,
+      index: 0,
     };
     this.copyToClipboard = this.copyToClipboard.bind(this);
+    this.switchMail = this.switchMail.bind(this);
   };
 
   // copies the email to the user's clipboard & displays a feedback bubble
   copyToClipboard() {
     copy(this.props.profile.email);
     this.setState({
-      copied: true
+      copied: true,
+      index: this.state.index
     });
     this.myInterval = setInterval(() => {
       this.setState({
-        copied: false
+        copied: false,
+        index: this.state.index
       });
     }, 3000);
+  };
+
+  switchMail(orientation) {
+    let length = this.props.profile.emails.length;
+    let index = this.state.index;
+
+    // Might look complexe but this just increases/decreases index value without allowing it
+    // become greater than the actual number of emails available nor get bellow 0
+    let newIndex = orientation === "down" ? (index - 1) < 0 ? 0 : (index - 1) : (index + 1) % length;
+
+    this.setState({
+      copied: false,
+      index: newIndex
+    });
   };
 
   render () {
@@ -137,7 +154,17 @@ class ProfileRow extends React.Component {
         <p className="secondary-profile-details" id="profile-grade">{this.props.profile.grade}</p>
         <div className="vertical-divider"></div>
         {this.state.copied ? <PopupMessage /> : <div></div>}
-        <p className="main-profile-details" id="profile-email">{this.props.profile.email}</p>
+        <p className="main-profile-details" id="profile-email">{this.props.profile.emails[this.state.index].email}</p>
+
+        { this.props.profile.emails.length>1
+        ?
+        <div className="switch-button-box">
+        <button className="switch-button fa fa-caret-up" onClick={() => this.switchMail("up")}></button>
+        <button className="switch-button fa fa-caret-down" onClick={() => this.switchMail("down")}></button>
+        </div>
+        :
+        <div></div>
+        }
         <button className="copy-button" onClick={this.copyToClipboard}>Copy email</button>
       </div>
     )
