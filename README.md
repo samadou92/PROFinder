@@ -22,7 +22,6 @@ I finally got myself to define a scope for the v1 and not go way beyond it (whic
 * Animation for god's sake!
 * Teacher's Office location
 * [Open Graph Protocol](https://ogp.me) support
-* Multiple emails support
 * Better UI (Material Design component library looks interesting!)
 
 ## Contribution

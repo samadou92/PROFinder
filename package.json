@@ -1,7 +1,7 @@
 {
   "homepage": "https://noisy96.github.io/PROFinder",
   "name": "profinder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "license": "GPLv3",
   "dependencies": {
