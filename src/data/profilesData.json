@@ -228,7 +228,7 @@
         "degree": "Doctorat (CS)",
         "grade": "MCB",
         "emails": [{
-            "email": "ali.kies@gmail.com"
+            "email": "kieskarima@gmail.com"
         }],
         "gender": "F"
     },
@@ -588,6 +588,60 @@
         "grade": "MCB",
         "emails": [{
             "email": "slimane.zerkouk@gmail.com"
+        }],
+        "gender": "M"
+    },
+    {
+        "fullname": "Baghdadi Leila",
+        "degree": "Magister (CS)",
+        "grade": "MAB",
+        "emails": [{
+            "email": "le.bagdadi@gmail.com"
+        }],
+        "gender": "F"
+    },
+    {
+        "fullname": "Bouziane Hafida",
+        "degree": "Doctorat (CS)",
+        "grade": "MCB",
+        "emails": [{
+            "email": "hafida_chouarfia@yahoo.fr"
+        }],
+        "gender": "F"
+    },
+    {
+        "fullname": "Khelil Rachida",
+        "degree": "Magister (FR)",
+        "grade": "MCB",
+        "emails": [{
+            "email": "rachidakh1@yahoo.fr"
+        }],
+        "gender": "F"
+    },
+    {
+        "fullname": "Si Tayeb Mustafa",
+        "degree": "Magister (CS)",
+        "grade": "MAA",
+        "emails": [{
+            "email": "si_si_tayeb@yahoo.fr"
+        }],
+        "gender": "M"
+    },
+    {
+        "fullname": "Zerkouk Meriem",
+        "degree": "Doctorat (CS)",
+        "grade": "MCB",
+        "emails": [{
+            "email": "zekouk.meriem@gmail.com"
+        }],
+        "gender": "F"
+    },
+    {
+        "fullname": "Benallal Mohamed Anis",
+        "degree": "Doctorat (CS)",
+        "grade": "MCB",
+        "emails": [{
+            "email": "benallal.info@gmail.com"
         }],
         "gender": "M"
     }
