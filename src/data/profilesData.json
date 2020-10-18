@@ -174,8 +174,12 @@
         "degree": "Magister (CS)",
         "grade": "MAA",
         "emails": [{
-            "email": "fati.mostefa@hotmail.com"
-        }],
+            "email": "fati.mostefa@gmail.com"
+        },
+        {
+            "email": "fati.mostefa@yahoo.com"
+        }         
+        ],
         "gender": "F"
     },
     {
@@ -644,5 +648,23 @@
             "email": "benallal.info@gmail.com"
         }],
         "gender": "M"
+    }
+    {
+        "fullname": "Abdelkader Diari",
+        "degree": "/",
+        "grade": "/",
+        "emails": [{
+            "email": "Dairi.aek@gmail.com"
+        }],
+        "gender": "M"
+    }
+    {
+        "fullname": "Senhadji Sarah",
+        "degree": "Doctorat (CS)",
+        "grade": "MCB",
+        "emails": [{
+            "email": "senhadji_sarah@yahoo.fr"
+        }],
+        "gender": "F"
     }
 ]
