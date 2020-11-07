@@ -28,6 +28,10 @@
         left: 2px;
     }
 
+    .profile-row-box {
+        width: 90%;
+    }
+
     .vertical-divider {
         visibility: hidden;
     }

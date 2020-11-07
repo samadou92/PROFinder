@@ -2,7 +2,6 @@
 
 .App {
     background-color: #F0F0F7;
-    width: 1100px;
     margin: auto;
     font-family: Montserrat, archivo narrow, Helvetica;
     padding-bottom: 10px;
@@ -58,7 +57,7 @@
     grid-template-columns: 40px 40px 180px 50px 100px 50px 40px 40px 0px 280px 60px 100px;
     grid-template-rows: 30px;
     height: 50px;
-    width: 90%;
+    width: 990px;
     margin: 15px auto;
     background-color: white;
     border-left: 5px #2C92D8 solid;
