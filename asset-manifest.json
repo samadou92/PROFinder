@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/PROFinder/static/css/main.0fe70ffd.chunk.css",
+    "main.js": "/PROFinder/static/js/main.5a09270f.chunk.js",
+    "main.js.map": "/PROFinder/static/js/main.5a09270f.chunk.js.map",
+    "runtime-main.js": "/PROFinder/static/js/runtime-main.8bf2524c.js",
+    "runtime-main.js.map": "/PROFinder/static/js/runtime-main.8bf2524c.js.map",
+    "static/css/2.2a8af4e6.chunk.css": "/PROFinder/static/css/2.2a8af4e6.chunk.css",
+    "static/js/2.96996b34.chunk.js": "/PROFinder/static/js/2.96996b34.chunk.js",
+    "static/js/2.96996b34.chunk.js.map": "/PROFinder/static/js/2.96996b34.chunk.js.map",
+    "index.html": "/PROFinder/index.html",
+    "precache-manifest.a46ecc72f1971bb75b7c389c186da975.js": "/PROFinder/precache-manifest.a46ecc72f1971bb75b7c389c186da975.js",
+    "service-worker.js": "/PROFinder/service-worker.js",
+    "static/css/2.2a8af4e6.chunk.css.map": "/PROFinder/static/css/2.2a8af4e6.chunk.css.map",
+    "static/css/main.0fe70ffd.chunk.css.map": "/PROFinder/static/css/main.0fe70ffd.chunk.css.map",
+    "static/js/2.96996b34.chunk.js.LICENSE.txt": "/PROFinder/static/js/2.96996b34.chunk.js.LICENSE.txt",
+    "static/media/code-source-icon.png": "/PROFinder/static/media/code-source-icon.742f9582.png",
+    "static/media/female-icon.png": "/PROFinder/static/media/female-icon.ca2d694e.png",
+    "static/media/font-awesome.min.css": "/PROFinder/static/media/fontawesome-webfont.fee66e71.woff",
+    "static/media/logo.png": "/PROFinder/static/media/logo.1896eea0.png",
+    "static/media/male-icon.png": "/PROFinder/static/media/male-icon.1950e10d.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8bf2524c.js",
+    "static/css/2.2a8af4e6.chunk.css",
+    "static/js/2.96996b34.chunk.js",
+    "static/css/main.0fe70ffd.chunk.css",
+    "static/js/main.5a09270f.chunk.js"
+  ]
+}
