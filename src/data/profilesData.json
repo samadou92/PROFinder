@@ -7,6 +7,24 @@
         }],
         "gender": "M"
     },
+ {
+        "fullname": "Belbachir Redouane",
+        "degree": "Master (CS)",
+        "grade": "MAA",
+        "emails": [{
+            "email": "belbachir.redouane@gmail.com"
+        }],
+        "gender": "M"
+    },
+ {
+        "fullname": "Abbou",
+        "degree": "Master (BI)",
+        "grade": "MAA",
+        "emails": [{
+            "email": "abbou.si@yahoo.com"
+        }],
+        "gender": "F"
+    },
     {
         "fullname": "Ali hassoune Mustapha",
         "degree": "Magister (CS)",
